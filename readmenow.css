@@ -61,6 +61,7 @@
     border-radius: 15px;
     box-shadow: 5px 5px 0px 0px #b09393;
     font-family: 'Noto Serif', serif;
+    gap: 10px;
 }
 
 .cover {

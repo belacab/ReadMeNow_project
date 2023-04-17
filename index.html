@@ -53,83 +53,33 @@
                 <div class="name-font">Bebu</div>
 
             </div>
+            <div class="bookform" hidden id="bookform">
+                <form action="" id="form">
+                    <input type="img" name="image" id="image" placeholder="inserte la imagen de la tapa aquí">
+                    <input type="text" name="description" id="description"
+                        placeholder="inserte la sinopsis del libro aquí">
+                    <button type="submit">Agregar libro</button>
+                </form>
+            </div>
             <div>
-                <button>new</button><button>upload</button><button>share</button>
+                <button onclick="showForm()">new</button>
+                <button>upload</button>
+                <button>share</button>
             </div>
         </div>
         <div class="main">
-            <div>
-                <div class="books">
-                    <h2>My books</h2>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/2DCs73x6P8seNobQ9zBSbO/1a5dfd6ed5fc0ed9545370470fc3d74c/English_Harry_Potter_1_Epub_9781781100219.jpg?w=914&q=70&fm=webp">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, id incidunt magnam in
-                            nesciunt labore hic rerum omnis veniam aliquam rem pariatur similique ipsum dicta earum
-                            dolor? Praesentium, nisi aperiam.</p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/6VuPUG4wPtmg3xvqwm6ZSn/2465365bae53ac09562f7bcea0b75cb3/English_Harry_Potter_2_Epub_9781781100226.jpg?w=914&q=70&fm=webp">
-                        <p>Optio, atque impedit sapiente reprehenderit reiciendis ea expedita dolores aliquam ullam
-                            placeat! Quod nulla nihil
-                            culpa illo esse nostrum ducimus aperiam repudiandae perferendis, repellendus id quo
-                            distinctio dolor labore
-                            quibusdam.</p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/24YWmI4UcyoMwj7wdKrEcL/374de1941927db12bd844fb197eab11f/English_Harry_Potter_3_Epub_9781781100233.jpg?w=914&q=70&fm=webp">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam expedita assumenda eaque
-                            voluptatem sint impedit
-                            autem non accusantium! Dolorum impedit incidunt reiciendis, ullam tempore voluptas mollitia
-                            inventore a voluptate
-                            corrupti?</p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/3d9kpFpwHyjACq8H3EU6ra/85673f9e660407e5e4481b1825968043/English_Harry_Potter_4_Epub_9781781105672.jpg?w=914&q=70&fm=webp">
-                        <p>Explicabo nam fuga mollitia iure molestias perferendis repellat eum vel
-                            sit cupiditate accusamus doloremque ea nisi
-                            consequatur minima atque maiores tempore nobis, commodi placeat reiciendis voluptates
-                            dignissimos aliquid? Dicta,
-                            autem.</p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/29op5HEVpvrKK2JKYCsFiO/5b939002fe3611b3f77659df83a76551/English_Harry_Potter_5_Epub_9781781100240.jpg?w=914&q=70&fm=webp">
-                        <p>Doloremque facere, reiciendis quia quo dolorem accusantium atque
-                            voluptates libero alias mollitia exercitationem
-                            aliquid? Quo quasi repudiandae sapiente expedita nostrum voluptatem rem quis autem tenetur,
-                            dolore reprehenderit
-                            eius sunt officiis!</p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/35KbpLHvQvQtBBKs0vKErL/43985bc9e5bea863ccf9cc9561b62827/English_Harry_Potter_6_Epub_9781781100257.jpg?w=914&q=70&fm=webp">
-                        <p>Laudantium minus porro at, nihil voluptatum ad consequatur nesciunt,
-                            facilis velit consectetur dolores accusantium
-                            quidem molestias alias nisi sed illum in esse soluta nostrum quibusdam praesentium ipsum
-                            officia veniam! Aspernatur.
-                        </p>
-                    </div>
-                    <div class="book">
-                        <img class="cover"
-                            src="https://images.ctfassets.net/usf1vwtuqyxm/6S51pK7uwnyhkS9Io9DsAn/320c162c5150f853b8d8568c4715dcef/English_Harry_Potter_7_Epub_9781781100264.jpg?w=914&q=70&fm=webp">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto nulla at nostrum porro
-                            accusantium exercitationem, quod tempore, impedit voluptatum architecto tempora sed
-                            reiciendis praesentium consequuntur. Porro consequatur illo magni.</p>
-                    </div>
-                </div>
+            <div class="books" id="books">
             </div>
             <div class="money">
                 <div class="ad">
                     <h2>Announcements</h2>
                     <div>
                         <h3>Site Maintenance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus error at, fuga ipsam
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus error at, fuga
+                            ipsam
                             numquam iusto itaque
-                            optio soluta laborum, obcaecati culpa, dolorem nesciunt quia velit. Aliquam ex voluptates
+                            optio soluta laborum, obcaecati culpa, dolorem nesciunt quia velit. Aliquam ex
+                            voluptates
                             animi
                             atque!</p>
                     </div>
@@ -137,7 +87,8 @@
                         <h3>Communitie Share Day</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus perspiciatis, earum
                             architecto voluptatibus
-                            corporis laboriosam! Rerum quam necessitatibus molestiae nulla eius doloremque? Minus esse
+                            corporis laboriosam! Rerum quam necessitatibus molestiae nulla eius doloremque? Minus
+                            esse
                             dolore dolorum excepturi,
                             recusandae dolorem aliquam?</p>
                     </div>
@@ -145,7 +96,8 @@
                         <h3>Updated Privacy Policy</h3>
                         <p>Dolorem nemo harum perferendis sit est velit quidem iure iusto assumenda, accusantium
                             voluptatibus architecto facere
-                            perspiciatis obcaecati pariatur illo voluptatum, quaerat sint sunt. Adipisci cupiditate nemo
+                            perspiciatis obcaecati pariatur illo voluptatum, quaerat sint sunt. Adipisci cupiditate
+                            nemo
                             quisquam saepe, id
                             ipsa.</p>
                     </div>
@@ -172,11 +124,9 @@
 
                 </div>
             </div>
+        </div>
 
-        </div>        
-
-    </div>
-
+        <script src="readmenow.js"></script>
 </body>
 
 </html>
